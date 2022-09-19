@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.3'
+}
+
+group 'org.ashwin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+implementation 'org.springframework.boot:spring-boot-starter-web:2.7.3'
+    implementation 'org.projectlombok:lombok:1.18.24'
+    implementation 'com.h2database:h2:2.1.214'
+    implementation 'org.springframework.data:spring-data-jpa:2.7.2'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.3'
+}
+
+test {
+    useJUnitPlatform()
+}
